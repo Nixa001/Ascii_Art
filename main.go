@@ -38,16 +38,19 @@ func RecupAsciiArt() {
 
 func generateAsciiArt(input string) string {
 	var result string
-	for i := 1; i < HeightChar; i++ {
-		for _, char := range input {
-			if int(char) < 32 {
-				fmt.Println("Invalid Input")
+	inputLines := strings.Split(input, "\\n")
+	for _, inputLine := range inputLines {
+		for i := 1; i < HeightChar; i++ {
+			for _, char := range inputLine {
+				if int(char) < 32 {
+					fmt.Println("Invalid Input")
+				}
+				chars := int(char) - 32
+				line := tabChars[chars][i]
+				result += string(line)
 			}
-			chars := int(char) - 32
-			line := tabChars[chars][i]
-			result += string(line)
+			result += "\n"
 		}
-		result += "\n"
 	}
 	return result
 }
