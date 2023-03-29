@@ -20,7 +20,7 @@
 ```
 - Ex : ```go run . "Hello !"```
 
-## Statistics and Mathematics
+## Banner (Template)
 
  - [Standard](https://github.com/Nixa001/Ascii_Art/blob/main/banner/standard.txt)
  - [Shadow](https://github.com/Nixa001/Ascii_Art/blob/main/banner/shadow.txt)
