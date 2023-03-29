@@ -32,5 +32,5 @@
 - [@nifaye](https://learn.zone01dakar.sn/git/nifaye)
 
 
-![Logo](https://www.techasoft.com/blog/2019/12/1576592374.png)
+![Logo](https://go.dev/images/go-logo-white.svg)
 ![Logo](https://avatars.githubusercontent.com/u/85998620?v=4)
