@@ -22,9 +22,9 @@
 
 ## Statistics and Mathematics
 
- - [Standard](https://en.wikipedia.org/wiki/Average)
- - [shadow](https://en.wikipedia.org/wiki/Median)
- - [thinkertoy](https://en.wikipedia.org/wiki/Variance)
+ - [Standard](https://github.com/Nixa001/Ascii_Art/blob/main/banner/standard.txt)
+ - [Shadow](https://github.com/Nixa001/Ascii_Art/blob/main/banner/shadow.txt)
+ - [Thinkertoy](https://github.com/Nixa001/Ascii_Art/blob/main/banner/thinkertoy.txt)
 
 ## Authors
 
