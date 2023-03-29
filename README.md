@@ -20,12 +20,11 @@
 ```
 - Ex : ```go run . "Hello !"```
 
-<!-- ## Statistics and Mathematics
+## Statistics and Mathematics
 
- - [Average](https://en.wikipedia.org/wiki/Average)
- - [Median](https://en.wikipedia.org/wiki/Median)
- - [Variance](https://en.wikipedia.org/wiki/Variance)
- - [Standard Deviation](https://en.wikipedia.org/wiki/Standard_deviation) -->
+ - [Standard](https://en.wikipedia.org/wiki/Average)
+ - [shadow](https://en.wikipedia.org/wiki/Median)
+ - [thinkertoy](https://en.wikipedia.org/wiki/Variance)
 
 ## Authors
 
