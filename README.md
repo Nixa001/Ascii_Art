@@ -33,4 +33,4 @@
 
 
 ![Logo](https://go.dev/images/go-logo-white.svg)
-![Logo](<img src="nixa.png" width="200">)
+![Logo](<img src="nixa.png" width="50">)
