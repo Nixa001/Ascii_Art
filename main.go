@@ -13,9 +13,9 @@ var tabChars = map[int][]string{}
 func main() {
 	RecupAsciiArt()
 
-	if len(os.Args) < 2 {
+	if len(os.Args) != 2 {
 		fmt.Println("Invalid Command")
-		fmt.Println("Usage: go run . \"input string\"")
+		fmt.Println("Usage: go run . \"Input\"")
 		os.Exit(0)
 	}
 
@@ -25,7 +25,7 @@ func main() {
 }
 
 func RecupAsciiArt() {
-	data, _ := ioutil.ReadFile("standard.txt")
+	data, _ := ioutil.ReadFile("banner/standard.txt")
 
 	lines := strings.Split(string(data), "\n")
 	characters := len(lines) / HeightChar
