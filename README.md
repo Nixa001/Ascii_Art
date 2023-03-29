@@ -33,4 +33,4 @@
 
 
 ![Logo](https://go.dev/images/go-logo-white.svg)
-![Logo](https://avatars.githubusercontent.com/u/85998620?v=4)
+![Logo](<img src="nixa.png" width="200">)
