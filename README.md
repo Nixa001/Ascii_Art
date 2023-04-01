@@ -10,37 +10,31 @@
 ```bash
   git clone https://learn.zone01dakar.sn/git/nifaye/ascii-art
 ```
--  Open Terminal and install go package
+-  Open Terminal and install go packages
 ```bash
   apt install golang
 ```
--  Run program using the next command
+- The usage must respect this format ```go run . [STRING] [BANNER] ```, any other formats must return the following usage message: 
+- Run program using the next command
 ```bash
-  go run . <INPUT>
+  go run . <INPUT> <BANNER>
 ```
-- Ex : ```go run . "Hello !"```
-
-## Banner (Template)
-
- - [Standard](https://github.com/Nixa001/Ascii_Art/blob/main/banner/standard.txt)
- - [Shadow](https://github.com/Nixa001/Ascii_Art/blob/main/banner/shadow.txt)
- - [Thinkertoy](https://github.com/Nixa001/Ascii_Art/blob/main/banner/thinkertoy.txt)
-
-## Authors
+- EXAMPLE : 
+```bash 
+go run . "Nifaye" shadow
+```
+```
+                                                  $
+_|      _| _|     _|_|                            $
+_|_|    _|      _|       _|_|_| _|    _|   _|_|   $
+_|  _|  _| _| _|_|_|_| _|    _| _|    _| _|_|_|_| $
+_|    _|_| _|   _|     _|    _| _|    _| _|       $
+_|      _| _|   _|       _|_|_|   _|_|_|   _|_|_| $
+                                      _|          $
+                                  _|_|            $
+```
+## Author
 
 - [@nifaye](https://learn.zone01dakar.sn/git/nifaye)
 
-
 ![Logo](https://go.dev/images/go-logo-white.svg)
-![Logo](<img src="nixa.png" width="50">)
-
-```
- _   _   _                                     $
-| \ | | (_)                  ___     ___    _  $
-|  \| |  _  __  __   __ _   / _ \   / _ \  / | $
-| . ` | | | \ \/ /  / _` | | | | | | | | | | | $
-| |\  | | |  >  <  | (_| | | |_| | | |_| | | | $
-|_| \_| |_| /_/\_\  \__,_|  \___/   \___/  |_| $
-                                               $
-                                               $
-```
