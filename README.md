@@ -21,6 +21,8 @@
 ```bash
 $ go run . --output=banner.txt "Nifaye" shadow
 $ cat -e banner.txt
+```
+```
                                                   $
 _|      _| _|     _|_|                            $
 _|_|    _|      _|       _|_|_| _|    _|   _|_|   $
