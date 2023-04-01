@@ -14,16 +14,13 @@
 ```bash
   apt install golang
 ```
-- The usage must respect this format ```go run . [STRING] [BANNER] ```, any other formats must return the following usage message: 
-- Run program using the next command
+- Usage: go run . [OPTION] [STRING] [BANNER]
+
+- EX: ``` go run . --output=<fileName.txt> something standard ```
+
 ```bash
-  go run . <INPUT> <BANNER>
-```
-- EXAMPLE : 
-```bash 
-go run . "Nifaye" shadow
-```
-```
+$ go run . --output=banner.txt "Nifaye" shadow
+$ cat -e banner.txt
                                                   $
 _|      _| _|     _|_|                            $
 _|_|    _|      _|       _|_|_| _|    _|   _|_|   $
