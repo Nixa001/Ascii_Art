@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -8,7 +9,7 @@ import (
 )
 
 var HeightChar = 9
-var tabChars = map[int][]string{}
+var tabChar = map[int][]string{}
 
 func main() {
 	RecupAsciiArt()
@@ -25,13 +26,17 @@ func main() {
 }
 
 func RecupAsciiArt() {
-	data, _ := ioutil.ReadFile("banner/standard.txt")
-
-	lines := strings.Split(string(data), "\n")
-	characters := len(lines) / HeightChar
+	var tabChars []string
+	scanner, _ := ioutil.ReadFile("banner/standard.txt")
+	data := bufio.NewScanner(strings.NewReader(string(scanner)))
+	for data.Scan() {
+		lines := data.Text()
+		tabChars = append(tabChars, lines)
+	}
+	characters := len(tabChars) / HeightChar
 	for i := 0; i < characters; i++ {
-		charLines := lines[i*HeightChar : (i+1)*HeightChar]
-		tabChars[int(i)] = charLines
+		charLines := tabChars[i*HeightChar : (i+1)*HeightChar]
+		tabChar[int(i)] = charLines
 
 	}
 }
@@ -46,7 +51,7 @@ func generateAsciiArt(input string) string {
 					fmt.Println("Invalid Input")
 				}
 				chars := int(char) - 32
-				line := tabChars[chars][i]
+				line := tabChar[chars][i]
 				result += string(line)
 			}
 			result += "\n"
