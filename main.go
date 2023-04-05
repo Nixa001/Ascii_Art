@@ -15,8 +15,8 @@ func main() {
 	args := os.Args
 	arg1 := os.Args[2]
 	if len(args) < 3 || len(args) > 4 {
-		fmt.Println("Invalid command")
-		fmt.Println("Usage: go run . \"Input string\" [Banner]")
+		fmt.Println("Usage: go run . [OPTION] [STRING] [BANNER]")
+		fmt.Println("EX: go run . --output=<fileName.txt> something standard")
 		os.Exit(0)
 	}
 	ReadAsciiTab()
@@ -26,7 +26,11 @@ func main() {
 func ReadAsciiTab() {
 	arg2 := asciiArtFs()
 	var tabChars []string
-	scanner, _ := ioutil.ReadFile(arg2)
+	scanner, err := ioutil.ReadFile(arg2)
+	if err != nil {
+		fmt.Println("Invalid banner")
+		os.Exit(1)
+	}
 	data := bufio.NewScanner(strings.NewReader(string(scanner)))
 	for data.Scan() {
 		lines := data.Text()

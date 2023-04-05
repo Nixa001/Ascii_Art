@@ -8,13 +8,16 @@
  - To use this program simple clone this Git repository on your local machine
 
 ```bash
-  git clone https://learn.zone01dakar.sn/git/nifaye/ascii-art
+  git clone https://learn.zone01dakar.sn/git/nifaye/ascii-art-output
 ```
--  Open Terminal and install go packages
+-  Open a Terminal in the repo and install go packages
 ```bash
   apt install golang
 ```
-- Usage: go run . [OPTION] [STRING] [BANNER]
+- Usage: 
+```console
+go run . [OPTION] [STRING] [BANNER]
+```
 
 - EX: ``` go run . --output=<fileName.txt> something standard ```
 
