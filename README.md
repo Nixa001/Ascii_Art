@@ -14,6 +14,7 @@
 ```bash
   apt install golang
 ```
+## Usage
 -  Run program using the next command
 ```bash
   go run . [STRING] [BANNER]

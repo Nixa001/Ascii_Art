@@ -19,12 +19,12 @@ func main() {
 		fmt.Println("\nEX: go run . something standard")
 		os.Exit(0)
 	}
-	ReadAsciiTab()
+	ReadBanner()
 	GenerateAscii(arg1)
 }
 
-func ReadAsciiTab() {
-	arg2 := Takebanner()
+func ReadBanner() {
+	arg2 := ReadBannerTextArg()
 	var tabChars []string
 	scanner, err := ioutil.ReadFile(arg2)
 	if err != nil {
