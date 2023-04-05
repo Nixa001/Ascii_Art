@@ -8,18 +8,28 @@
  - To use this program simple clone this Git repository on your local machine
 
 ```bash
-  git clone https://learn.zone01dakar.sn/git/nifaye/ascii-art
+  git clone https://learn.zone01dakar.sn/git/nifaye/ascii-art-fs
 ```
--  Open Terminal and install go package
+-  Open a Terminal in the repo and install go packages
 ```bash
   apt install golang
 ```
 -  Run program using the next command
 ```bash
-  go run . <INPUT>
+  go run . [STRING] [BANNER]
 ```
-- Ex : ```go run . "Hello !"```
+- Ex : ```go run . "HELLO" shadow | cat -e```
 
+```
+                                             $
+_|    _| _|_|_|_| _|       _|         _|_|   $
+_|    _| _|       _|       _|       _|    _| $
+_|_|_|_| _|_|_|   _|       _|       _|    _| $
+_|    _| _|       _|       _|       _|    _| $
+_|    _| _|_|_|_| _|_|_|_| _|_|_|_|   _|_|   $
+                                             $
+                                             $
+```
 ## Banner (Template)
 
  - [Standard](https://github.com/Nixa001/Ascii_Art/blob/main/banner/standard.txt)
@@ -29,18 +39,8 @@
 ## Authors
 
 - [@nifaye](https://learn.zone01dakar.sn/git/nifaye)
+- [@khthiam](https://learn.zone01dakar.sn/git/khthiam)
 
 
 ![Logo](https://go.dev/images/go-logo-white.svg)
-![Logo](<img src="nixa.png" width="50">)
 
-```
- _   _   _                                     $
-| \ | | (_)                  ___     ___    _  $
-|  \| |  _  __  __   __ _   / _ \   / _ \  / | $
-| . ` | | | \ \/ /  / _` | | | | | | | | | | | $
-| |\  | | |  >  <  | (_| | | |_| | | |_| | | | $
-|_| \_| |_| /_/\_\  \__,_|  \___/   \___/  |_| $
-                                               $
-                                               $
-```
