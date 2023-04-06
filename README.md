@@ -1,6 +1,6 @@
 ## ASCII-ART
 
-*  A small Go program that generates ASCII art from a string input. 
+*  A small Go program that generates ASCII art from a string and banner input. 
 
 
 ## Installation

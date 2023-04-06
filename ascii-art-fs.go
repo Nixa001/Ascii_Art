@@ -1,10 +1,10 @@
-package functions
+package main
 
 import (
 	"os"
 )
 
-func Takebanner() string {
+func ReadBannerTextArg() string {
 	args := os.Args
 	value := "banner/standard.txt"
 	if len(args) == 3 {
